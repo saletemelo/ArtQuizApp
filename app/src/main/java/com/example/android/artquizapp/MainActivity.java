@@ -94,57 +94,57 @@ public class MainActivity extends AppCompatActivity {
         //To check if all questions were answerd
 
         RadioGroup radioGroupDegas = (RadioGroup) findViewById(R.id.radioGroupDegas);
-        if (radioGroupDegas.getCheckedRadioButtonId()>0){
-            checkedRadioButtons = checkedRadioButtons +1;
+        if (radioGroupDegas.getCheckedRadioButtonId() > 0) {
+            checkedRadioButtons = checkedRadioButtons + 1;
         }
 
         RadioGroup radioGroupManet = (RadioGroup) findViewById(R.id.radioGroupManet);
-        if (radioGroupManet.getCheckedRadioButtonId()>0){
-            checkedRadioButtons = checkedRadioButtons +1;
+        if (radioGroupManet.getCheckedRadioButtonId() > 0) {
+            checkedRadioButtons = checkedRadioButtons + 1;
         }
 
         RadioGroup radioGroupKlimt = (RadioGroup) findViewById(R.id.radioGroupKlimt);
-        if (radioGroupKlimt.getCheckedRadioButtonId()>0){
-            checkedRadioButtons = checkedRadioButtons +1;
+        if (radioGroupKlimt.getCheckedRadioButtonId() > 0) {
+            checkedRadioButtons = checkedRadioButtons + 1;
         }
 
         RadioGroup radioGroupVermeer = (RadioGroup) findViewById(R.id.radioGroupVermeer);
-        if (radioGroupVermeer.getCheckedRadioButtonId()>0){
-            checkedRadioButtons = checkedRadioButtons +1;
+        if (radioGroupVermeer.getCheckedRadioButtonId() > 0) {
+            checkedRadioButtons = checkedRadioButtons + 1;
         }
 
         RadioGroup radioGroupPicasso = (RadioGroup) findViewById(R.id.radioGroupPicasso);
-        if (radioGroupPicasso.getCheckedRadioButtonId()>0){
-            checkedRadioButtons = checkedRadioButtons +1;
+        if (radioGroupPicasso.getCheckedRadioButtonId() > 0) {
+            checkedRadioButtons = checkedRadioButtons + 1;
         }
 
         RadioGroup radioGroupBosch = (RadioGroup) findViewById(R.id.radioGroupBosch);
-        if (radioGroupBosch.getCheckedRadioButtonId()>0){
-            checkedRadioButtons = checkedRadioButtons +1;
+        if (radioGroupBosch.getCheckedRadioButtonId() > 0) {
+            checkedRadioButtons = checkedRadioButtons + 1;
         }
 
         RadioGroup radioGroupBotticelli = (RadioGroup) findViewById(R.id.radioGroupBotticelli);
-        if (radioGroupBotticelli.getCheckedRadioButtonId()>0){
-            checkedRadioButtons = checkedRadioButtons +1;
+        if (radioGroupBotticelli.getCheckedRadioButtonId() > 0) {
+            checkedRadioButtons = checkedRadioButtons + 1;
         }
 
         RadioGroup radioGroupMillais = (RadioGroup) findViewById(R.id.radioGroupMillais);
-        if (radioGroupMillais.getCheckedRadioButtonId()>0){
-            checkedRadioButtons = checkedRadioButtons +1;
+        if (radioGroupMillais.getCheckedRadioButtonId() > 0) {
+            checkedRadioButtons = checkedRadioButtons + 1;
         }
 
         RadioGroup radioGroupGogh = (RadioGroup) findViewById(R.id.radioGroupGogh);
-        if (radioGroupGogh.getCheckedRadioButtonId()>0){
-            checkedRadioButtons = checkedRadioButtons +1;
+        if (radioGroupGogh.getCheckedRadioButtonId() > 0) {
+            checkedRadioButtons = checkedRadioButtons + 1;
         }
 
         RadioGroup radioGroupSeurat = (RadioGroup) findViewById(R.id.radioGroupSeurat);
-        if (radioGroupSeurat.getCheckedRadioButtonId()>0){
-            checkedRadioButtons = checkedRadioButtons +1;
+        if (radioGroupSeurat.getCheckedRadioButtonId() > 0) {
+            checkedRadioButtons = checkedRadioButtons + 1;
         }
 
         //Show a message to user when he tries to submit partially the quiz
-        if (checkedRadioButtons <10) {
+        if (checkedRadioButtons < 10) {
             Toast.makeText(getApplicationContext(), "You have to answer to all the questions before submitting your Quiz!", Toast.LENGTH_LONG).show();
             return;
         }
@@ -202,35 +202,27 @@ public class MainActivity extends AppCompatActivity {
 
         //Displays Total Message to user
 
-        if (Total <1) {
+        if (Total < 1) {
             //Show a message to user
             Toast.makeText(getApplicationContext(), "You're Score is " + Total + "! " + "Better luck Next Time", Toast.LENGTH_LONG).show();
             return;
-        }
-
-        else if (Total <=5) {
+        } else if (Total <= 5) {
             Toast.makeText(getApplicationContext(), "You're Score is " + Total + "! " + "You have some knowledge about Art, but you should improve it!", Toast.LENGTH_LONG).show();
             return;
-        }
-
-        else if (Total <=7) {
+        } else if (Total <= 7) {
             Toast.makeText(getApplicationContext(), "You're Score is " + Total + "! " + "You have a good knowledge about Art, Congratulations!", Toast.LENGTH_LONG).show();
             return;
-        }
-
-        else if (Total <=9) {
+        } else if (Total <= 9) {
             Toast.makeText(getApplicationContext(), "You're Score is " + Total + "! " + "Waw! You really know Art, Congratulations!", Toast.LENGTH_LONG).show();
             return;
-        }
-
-        else {
+        } else {
             Toast.makeText(getApplicationContext(), "You're Score is " + Total + "! " + "Amazing! You're the Best!", Toast.LENGTH_LONG);
             return;
         }
 
-        }
+    }
 
-        //To reset all the answers
+    //To reset all the answers
 
     public void resetQuiz(View v) {
         RadioGroup radioGroupDegas = (RadioGroup) findViewById(R.id.radioGroupDegas);
